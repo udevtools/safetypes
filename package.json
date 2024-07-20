@@ -1,0 +1,6 @@
+{
+  "name": "com.unitools.safetypes",
+  "version": "1.0.0",
+  "displayName": "Safe Types",
+  "description": "Add protected int, string and bool types to prevent cheating."
+}
