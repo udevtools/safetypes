@@ -35,7 +35,7 @@ public class SafeInt
             }
             else
             {
-                GameObject.Find("CheatDetector").SendMessage("CheatDetected");
+                GameObject.FindFirstObjectByType<CheatDetector>().SendMessage("CheatDetected");
                 Value = protectedValue.GetInt();
             }
         }
