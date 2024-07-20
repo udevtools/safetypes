@@ -15,7 +15,7 @@ public class SafeBool
     public bool Value { 
         get 
         { 
-            if (protectedValue.CompareValue(Value))
+            if (protectedValue.CompareValue(_value))
             {
                 return _value;
             }
@@ -28,7 +28,7 @@ public class SafeBool
         }
         set
         {
-            if (protectedValue.CompareValue(Value))
+            if (protectedValue.CompareValue(_value))
             {
                 _value = value;
                 protectedValue.ApplyNewValue(_value);
