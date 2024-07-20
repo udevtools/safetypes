@@ -15,7 +15,7 @@ public class SafeString
     public string Value { 
         get 
         { 
-            if (protectedValue.CompareValue(Value))
+            if (protectedValue.CompareValue(_value))
             {
                 return _value;
             }
@@ -28,7 +28,7 @@ public class SafeString
         }
         set
         {
-            if (protectedValue.CompareValue(Value))
+            if (protectedValue.CompareValue(_value))
             {
                 _value = value;
                 protectedValue.ApplyNewValue(_value);
